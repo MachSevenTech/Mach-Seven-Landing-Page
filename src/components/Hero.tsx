@@ -46,7 +46,7 @@ export function Hero() {
           {...rise(0.22)}
           className="mt-7 max-w-xl text-body-l text-pretty text-muted"
         >
-          Mach Seven is building <span className="text-ink">Echo</span> — a
+          Mach Seven is building <span className="text-ink">Echo</span>, a
           diagnostic learning engine for STEM. It doesn&rsquo;t just mark you
           wrong; it finds the misconception underneath. We&rsquo;re starting
           against the most competitive science exams on Earth, and building for

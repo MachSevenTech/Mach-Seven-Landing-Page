@@ -25,7 +25,7 @@ export function Echo() {
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
         <Reveal className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-signal">
-            Echo — the flagship
+            Echo, the flagship
           </p>
           <h2
             id="echo-heading"
@@ -59,7 +59,7 @@ export function Echo() {
         <Reveal className="mt-10 max-w-2xl">
           <p className="text-body-l text-pretty text-muted">
             <span className="text-ink">One engine, every STEM subject.</span>{" "}
-            Physics first, mathematics and chemistry next — built from the start
+            Physics first, mathematics and chemistry next, built from the start
             to generalize.
           </p>
         </Reveal>

@@ -23,7 +23,7 @@ export function WhyMachSeven() {
             purpose.
           </p>
           <p className="text-body-l text-pretty text-muted">
-            Mach Seven is a small team building at hypersonic speed — engineers
+            Mach Seven is a small team building at hypersonic speed: engineers
             and educators who&rsquo;ve actually taught this material to hundreds
             of thousands of students, now turning that instinct into software.
           </p>

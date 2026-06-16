@@ -25,9 +25,16 @@ export function Nav() {
       >
         <a
           href="#top"
-          className="font-serif text-2xl leading-none tracking-tight text-ink"
+          className="flex items-center gap-2.5 text-ink"
         >
-          Mach Seven
+          <img
+            src="/mach-seven-mark.png"
+            alt="Mach Seven logo"
+            className="size-7 rounded-md"
+            width={28}
+            height={28}
+          />
+          <span className="text-2xl leading-none tracking-tight">Mach Seven</span>
         </a>
         <a
           href="#careers"

@@ -20,13 +20,13 @@ const engineeringRoles: EngineeringRole[] = [
   {
     title: "Lead Full-Stack Engineer",
     tag: "Engineering",
-    hook: "Architect the system the entire product runs on — and own the decisions that shape it.",
+    hook: "Architect the system the entire product runs on, and own the decisions that shape it.",
     intro:
       "The role. You are the founding engineer. You design the backend, build the student-facing web app, and stand up the content engine that feeds everything else. The big architecture calls are yours to make.",
     owns: [
-      "The backend, from the ground up — data model, APIs, infrastructure. You decide the architecture.",
+      "The backend, from the ground up: data model, APIs, infrastructure. You decide the architecture.",
       "The student-facing web application: the surface students actually live in, built for focus.",
-      "The content engine — a pipeline that ingests problems from screenshots, extracts and structures them with the Claude API and Mathpix, and routes them through human review with async batch processing.",
+      "The content engine, a pipeline that ingests problems from screenshots, extracts and structures them with the Claude API and Mathpix, and routes them through human review with async batch processing.",
       "One API layer serving both web and mobile, plus the real-time event tracking that powers analytics and trains our learning models.",
     ],
     hard: [
@@ -48,24 +48,24 @@ const engineeringRoles: EngineeringRole[] = [
   {
     title: "Machine Learning Engineer",
     tag: "Engineering",
-    hook: "Build the brain — the model that figures out what each student actually understands, and what they should do next.",
+    hook: "Build the brain: the model that figures out what each student actually understands, and what they should do next.",
     intro:
-      "The role. You're the founding ML hire. Before you train a single model, you design the data foundation the entire company will build on — then you build the models on top of it.",
+      "The role. You're the founding ML hire. Before you train a single model, you design the data foundation the entire company will build on, then you build the models on top of it.",
     owns: [
       "The learner-state model: how we represent what a student knows, how they err, how confident they are, and how all of that shifts over time.",
-      "The interaction event schema — designed so every signal a future model could need is captured from day one.",
-      "The recommendation engine: choosing the next problem from error type, mastery, prerequisite readiness, and spacing — built modular so it can grow from rule-based to fully learned without a rewrite.",
+      "The interaction event schema, designed so every signal a future model could need is captured from day one.",
+      "The recommendation engine: choosing the next problem from error type, mastery, prerequisite readiness, and spacing, built modular so it can grow from rule-based to fully learned without a rewrite.",
       "The adaptive model itself, evolving from knowledge tracing toward deep, per-student models of learning and forgetting.",
     ],
     hard: [
-      "Diagnose the specific misconception behind a wrong answer — and eventually predict it from partial signals (response time, hint use, confidence) before the student even commits.",
+      "Diagnose the specific misconception behind a wrong answer, and eventually predict it from partial signals (response time, hint use, confidence) before the student even commits.",
       "Model individual learning rates and forgetting curves to drive genuinely personalized spaced repetition.",
       "Read open-ended student reasoning with the Claude API to catch the misunderstandings multiple-choice can't surface.",
-      "Measure what actually matters — conceptual gain, retention, transfer — through rigorous experiments, never vanity engagement metrics.",
+      "Measure what actually matters (conceptual gain, retention, transfer) through rigorous experiments, never vanity engagement metrics.",
     ],
     fit: [
       "You're fluent in the modern Python/ML stack and energized by applied modeling on messy, real human data.",
-      "You think like a scientist but ship like an engineer — you care whether students actually learn, and you'll instrument everything to prove it.",
+      "You think like a scientist but ship like an engineer: you care whether students actually learn, and you'll instrument everything to prove it.",
       "You want the ownership of being employee-zero for ML, defining the foundation rather than inheriting one.",
     ],
     bonus:
@@ -111,8 +111,8 @@ export function Careers() {
               <p className="text-[0.95rem] text-paper/55">
                 <span className="text-paper/80">
                   And roles we haven&rsquo;t named yet
-                </span>{" "}
-                — for people who don&rsquo;t fit a box.
+                </span>
+                , for people who don&rsquo;t fit a box.
               </p>
             </div>
           </RevealItem>

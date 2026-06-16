@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!--
+    Social card. On-brand: paper bg, ink type, single amber echo waveform.
+    TODO: some platforms (older crawlers) prefer a rasterized 1200x630 PNG.
+    Export this to og-image.png and update index.html if needed.
+  -->
+  <rect width="1200" height="630" fill="#FAFAF8" />
+
+  <!-- echo signature: emitter + returning waveform -->
+  <line x1="96" y1="430" x2="1104" y2="430" stroke="#0A0A0B" stroke-opacity="0.06" stroke-width="2" />
+  <circle cx="120" cy="430" r="9" fill="#E8643C" />
+  <path
+    d="M150 430 C 210 430 230 372 270 372 C 310 372 320 488 372 488 C 430 488 440 350 500 350 C 560 350 568 510 628 510 C 690 510 700 360 760 360 C 820 360 826 470 880 470 C 930 470 944 414 990 414 C 1030 414 1050 430 1080 430"
+    fill="none" stroke="#E8643C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <text x="96" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#0A0A0B">Mach Seven</text>
+  <text x="96" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="76" fill="#0A0A0B">Every wrong answer is an echo.</text>
+  <text x="96" y="356" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#86868B">Building Echo  learning software that hears the misconception behind the mistake.</text>
+</svg>

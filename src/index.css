@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Mach Seven design tokens
+ * Single source of truth. Components reference these via Tailwind
+ * utilities (bg-paper, text-ink, etc.) — never raw hex.
+ * ------------------------------------------------------------------ */
+@theme {
+  --color-paper: #fafaf8;
+  --color-ink: #0a0a0b;
+  --color-muted: #86868b;
+  /* warm amber: the ONLY accent. waveform stroke, returning pulse, primary CTA. */
+  --color-signal: #e8643c;
+  --color-signal-deep: #c9491f;
+  /* hairline border = ink at ~8% */
+  --color-line: rgba(10, 10, 11, 0.08);
+
+  /* Helvetica throughout — one typeface, system-loaded (no web fonts). */
+  --font-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* fluid type scale */
+  --text-display: clamp(2.75rem, 6vw, 5rem);
+  --text-display--line-height: 1.02;
+  --text-head: clamp(1.5rem, 3vw, 2.25rem);
+  --text-head--line-height: 1.1;
+  --text-body-l: 1.1875rem;
+  --text-body-l--line-height: 1.55;
+
+  /* signature easing for every transition */
+  --ease-signal: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-paper);
+  }
+
+  /* visible, branded keyboard focus */
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* respect reduced-motion globally; components also gate via Framer */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
